@@ -1,0 +1,61 @@
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/form';
+@import 'components/showall';
+
+.background {
+    background-color: aquamarine;
+
+    .main-app {
+        height: 100vh;
+        padding: 15vh 10vw;
+
+        .logo {
+            color: yellow;
+            text-shadow: 2px 2px 5px black;
+            font-family: 'Alfa Slab One', cursive;
+            text-transform: uppercase;
+            letter-spacing: 7px;
+        }
+    }
+
+    .bi-trash3 {
+        position: relative;
+        right: 30px;
+        top: 5px;
+    }
+}
+
+@media (max-width: 650px) {
+    .add-new {
+        position: absolute;
+        top: 2vh;
+        left: 0;
+        right: 0vw;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .background .main-app {
+        padding: 15vh 3vw;
+    }
+
+    .form {
+        width: 80vw;
+    }
+
+    .cards {
+        padding: 0 0vw 3vw;
+
+        .card {
+            padding: 10vh 1vw 2vh;
+        }
+    }
+}
+
+@media (min-width: 950px) {
+    .background .main-app .cards .navigation i {
+        font-size: 50px;
+      }
+}

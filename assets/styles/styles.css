@@ -1,0 +1,149 @@
+.add-new {
+  position: absolute;
+  top: 2vh;
+  right: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.score button {
+  border-radius: 5px;
+  padding: 5px 25px;
+}
+.score button.again-btn {
+  background-color: black;
+  color: yellow;
+}
+.score button.again-btn:hover {
+  background-color: rgb(29, 28, 28);
+}
+
+.got-it-btn {
+  background-color: yellow;
+  color: black;
+}
+.got-it-btn:hover {
+  background-color: rgb(248, 248, 52);
+}
+
+.cards {
+  padding: 0 5vw 3vw;
+}
+.cards .sizable {
+  color: rgb(11, 192, 132);
+  font-weight: 600;
+}
+.cards .sizable:hover {
+  cursor: pointer;
+  color: rgb(1, 60, 39);
+}
+.cards .card {
+  padding: 10vh 3vw 2vh;
+  background-color: rgb(249, 243, 168);
+  height: 50vh;
+  width: 50vw;
+}
+.cards .card .card-text {
+  font-family: "Alfa Slab One", cursive;
+  color: rgb(11, 192, 132);
+  text-shadow: 1px 1px 2px black;
+  align-self: center;
+  letter-spacing: 4px;
+}
+.cards .card .card-text.card-text-font {
+  font-size: 20px;
+}
+.cards .navigation {
+  background-color: rgba(255, 255, 255, 0.022);
+  color: yellow;
+  text-shadow: 1px 1px 5px black;
+  font-family: "Alfa Slab One", cursive;
+  border: none;
+  transition: 3s;
+  border-radius: 5px;
+  margin-top: 6.9vh;
+}
+.cards .navigation:hover {
+  background-color: rgb(49, 240, 176);
+  transition: 3s;
+}
+.cards .navigation i {
+  font-size: 30px;
+}
+
+.form {
+  width: 50vw;
+  margin: 5vh auto;
+}
+.form__form {
+  display: flex;
+  flex-direction: column;
+}
+.form__form label {
+  font-weight: 700;
+}
+
+.show-all {
+  margin: 5vh auto;
+  padding-bottom: 5vh;
+  z-index: 9000;
+}
+.show-all__card {
+  width: 50%;
+  padding: 15px 10px;
+  text-align: center;
+  border: 1px solid orange;
+  background-color: rgb(249, 243, 168);
+  border-radius: 5px;
+  margin: 1px;
+  min-height: 200px;
+}
+
+.background {
+  background-color: aquamarine;
+}
+.background .main-app {
+  height: 100vh;
+  padding: 15vh 10vw;
+}
+.background .main-app .logo {
+  color: yellow;
+  text-shadow: 2px 2px 5px black;
+  font-family: "Alfa Slab One", cursive;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+.background .bi-trash3 {
+  position: relative;
+  right: 30px;
+  top: 5px;
+}
+
+@media (max-width: 650px) {
+  .add-new {
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    right: 0vw;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .background .main-app {
+    padding: 15vh 3vw;
+  }
+  .form {
+    width: 80vw;
+  }
+  .cards {
+    padding: 0 0vw 3vw;
+  }
+  .cards .card {
+    padding: 10vh 1vw 2vh;
+  }
+}
+@media (min-width: 950px) {
+  .background .main-app .cards .navigation i {
+    font-size: 50px;
+  }
+}/*# sourceMappingURL=styles.css.map */
